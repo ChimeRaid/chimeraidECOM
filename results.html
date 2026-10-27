@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Student Results and Reviews | ChimeRaid Ecom</title>
+  <meta name="description" content="Real ChimeRaid Ecom student results: Shopify sales dashboards, first orders and on-camera video reviews from our dropshipping mentorship." />
+  <link rel="canonical" href="https://chimeraid.com/results.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#0A0014" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Student Results and Reviews | ChimeRaid Ecom" />
+  <meta property="og:description" content="Shopify sales dashboards and video reviews posted by ChimeRaid Ecom mentorship students." />
+  <meta property="og:url" content="https://chimeraid.com/results.html" />
+  <meta property="og:image" content="https://chimeraid.com/assets/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://chimeraid.com/assets/og-image.jpg" />
+  <link rel="apple-touch-icon" href="assets/favicon.png?v=2" />
+  <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://chimeraid.com/results.html",
+      "url": "https://chimeraid.com/results.html",
+      "name": "Student Results and Reviews | ChimeRaid Ecom",
+      "isPartOf": {
+        "@id": "https://chimeraid.com/#website"
+      },
+      "about": {
+        "@id": "https://chimeraid.com/#org"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://chimeraid.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Student Results",
+          "item": "https://chimeraid.com/results.html"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Are these results real?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Every dashboard and message on this page was posted by a student in the ChimeRaid Ecom Discord, in the wins and student-wins channels. We use their screenshots as they shared them, with no mockups or stock images."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are these typical results?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. These are some of our strongest weeks, not a promise of what you will make. Your niche, ad budget and how fast you execute all change the outcome. Every student starts at the first order, like the #1001 screenshot above."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much do I need to get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Plans start at $499 for 3 months. On top of that, expect an initial ad test budget of around $300 to $600 for the first 72-hour validation round. We only scale spend once the numbers hold."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long until I see my first sale?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is no fixed timeline. We validate products in 72 hours, then scale only when the numbers hold. Students who iterate creatives fast and keep clean analytics tend to move quicker."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    :root{
+      --lilac:#C8A2C8; --blue:#7FDBFF; --ink:#e9ecf1; --muted:#a7afbb; --panel:#111523; --bg:#0b0b10;
+    }
+
+    /* animated global gradient background */
+    html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  background: linear-gradient(135deg, #0A0014 0%, #0B1C33 30%, #430443 65%, #022736 100%);
+  background-size: 300% 300%;
+  animation: gradientShift 18s ease infinite;
+    }
+    @keyframes gradientShift{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    /* helper animations used in hero */
+    @keyframes slowZoom{0%{transform:scale(1)}100%{transform:scale(1.08)}}
+    .animate-slow-zoom{animation:slowZoom 16s ease-in-out infinite alternate}
+    @keyframes floaty{0%{transform:translateY(0)}50%{transform:translateY(-6px)}100%{transform:translateY(0)}}
+    .animate-float{animation:floaty 6s ease-in-out infinite}
+
+    /* hide scrollbar utility */
+    .hide-scrollbar{-ms-overflow-style:none;scrollbar-width:none}
+    .hide-scrollbar::-webkit-scrollbar{display:none}
+
+    /* brand glow utility */
+    @keyframes brandGlow{
+      0%{box-shadow:0 0 15px rgba(139,92,246,.30)}
+      50%{box-shadow:0 0 50px rgba(59,130,246,.80)}
+      100%{box-shadow:0 0 15px rgba(139,92,246,.30)}
+    }
+    .glow-effect{animation:brandGlow 2.5s infinite ease-in-out; border-radius:14px}
+
+    /* premium purple card */
+    .purple-card{
+      background:linear-gradient(145deg,rgba(91,33,182,.95),rgba(139,92,246,.95));
+      border-radius:1.3rem; padding:2.5rem; color:#fff;
+      box-shadow:0 0 35px rgba(139,92,246,.40),0 12px 65px rgba(0,0,0,.25), inset 0 0 12px rgba(255,255,255,.05);
+      transition:transform .3s ease, box-shadow .3s ease; position:relative; overflow:hidden
+    }
+    .purple-card::before{
+      content:""; position:absolute; top:-60%; left:-50%; width:200%; height:200%;
+      background:radial-gradient(circle at center, rgba(255,255,255,.06), transparent 70%);
+      transform:rotate(25deg); pointer-events:none
+    }
+    .purple-card:hover{transform:translateY(-6px) scale(1.02);
+      box-shadow:0 0 50px rgba(139,92,246,.55),0 22px 75px rgba(0,0,0,.30), inset 0 0 18px rgba(255,255,255,.08)
+    }
+
+    /* better readability on glass header */
+    .nav-link{color:#fff}
+    .nav-link:hover{color:rgb(216,180,254)}
+
+    /* scroll-reveal fade-up */
+    .reveal{opacity:0; transform:translateY(24px); transition:opacity .6s ease, transform .6s ease}
+    .reveal.reveal-visible{opacity:1; transform:translateY(0)}
+
+    /* hide scrollbar on mobile swipe rows */
+    .no-scrollbar{scrollbar-width:none; -ms-overflow-style:none}
+    .no-scrollbar::-webkit-scrollbar{display:none}
+
+
+    /* aurora glow blobs (hero) */
+    .aurora-wrap{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:1;-webkit-mask-image:linear-gradient(to bottom,#000 75%,transparent 100%);mask-image:linear-gradient(to bottom,#000 75%,transparent 100%)}
+    .aurora{position:absolute;border-radius:50%;filter:blur(80px)}
+    .aurora-1{width:440px;height:440px;left:6%;top:-100px;background:var(--lilac);opacity:.35;animation:auroraDrift1 15s ease-in-out infinite alternate}
+    .aurora-2{width:400px;height:400px;right:4%;top:20px;background:var(--blue);opacity:.30;animation:auroraDrift2 18s ease-in-out infinite alternate}
+    @keyframes auroraDrift1{to{transform:translate(70px,50px) scale(1.15)}}
+    @keyframes auroraDrift2{to{transform:translate(-60px,45px) scale(1.1)}}
+
+    /* flowing gradient text */
+    .text-flow{background-size:200% 100%; background-position:0 0; animation:textFlow 2.6s ease-out 1 both}
+    @keyframes textFlow{from{background-position:0 0} to{background-position:100% 0}}
+
+    /* shimmer + pulse on primary CTAs */
+    .btn-shimmer{position:relative;overflow:hidden;box-shadow:0 10px 32px -8px rgba(127,219,255,.5)}
+    .btn-shimmer::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.65),transparent);transform:translateX(0) skewX(-20deg);animation:ctaShimmer 2.8s ease-in-out infinite;will-change:transform}
+    @keyframes ctaShimmer{to{transform:translateX(475%) skewX(-20deg)}}
+
+    /* spinning conic border for the featured pricing plan */
+    .spin-border{position:relative;border-radius:1.5rem;padding:2px;overflow:hidden;isolation:isolate;background:#0b0b10}
+    .spin-border::before{content:"";position:absolute;inset:-75%;background:conic-gradient(var(--lilac),var(--blue),var(--lilac));animation:spinRotate 6s linear infinite;will-change:transform}
+    .spin-border>*{position:relative;z-index:1}
+    @keyframes spinRotate{to{transform:rotate(360deg)}}
+
+    /* count-up + funnel bars */
+    .reveal .f-bar{width:0}
+    .reveal.reveal-visible .f-bar{width:var(--w) !important}
+    .f-bar{transition:width 1.4s cubic-bezier(.2,.8,.2,1)}
+
+    /* magnetic buttons: nudge toward the cursor, spring back on leave */
+    .magnetic-btn{transition:transform .25s cubic-bezier(.2,.8,.2,1)}
+    .magnetic-btn.snap-back{transition:transform .45s cubic-bezier(.34,1.56,.64,1)}
+
+    /* stop paying for the hero's ambient motion once it's scrolled out of view */
+    #hero.offscreen .aurora,#hero.offscreen .text-flow,#hero.offscreen .btn-shimmer::after{animation-play-state:paused !important}
+
+    @media (prefers-reduced-motion: reduce){
+      .aurora,.text-flow,.btn-shimmer::after,.spin-border::before,.magnetic-btn{animation:none !important;transition:none !important}
+    }
+  </style>
+</head>
+
+<body class="text-white">
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/10 backdrop-blur-xl border-b border-white/10 shadow-lg">
+    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+      <a href="index.html" class="flex items-center">
+        <span class="text-2xl md:text-3xl font-extrabold tracking-tight whitespace-nowrap">
+          <span style="color:var(--blue)">Chime</span><span style="color:var(--lilac)">Raid</span> <span style="color:var(--blue)">Ecom</span>
+        </span>
+      </a>
+
+      <nav>
+        <ul class="hidden md:flex items-center space-x-6 text-base">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="index.html#how-it-works">Programs</a></li>
+          <li><a class="nav-link" href="results.html" aria-current="page" style="color:var(--lilac)">Results</a></li>
+          <li><a class="nav-link" href="index.html#video-reviews">Videos</a></li>
+          <li><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+          <li><a class="nav-link" href="index.html#faq">FAQ</a></li>
+          <li><a class="nav-link" href="index.html#support">Contact</a></li>
+        </ul>
+
+        <!-- mobile button -->
+        <button id="menu-toggle" class="md:hidden text-purple-200 p-2" aria-label="Open menu">
+          <i class="fas fa-bars fa-lg"></i>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white/10 backdrop-blur-md border-t border-white/10">
+      <ul class="flex flex-col space-y-4 p-4 text-base">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="index.html#how-it-works">Programs</a></li>
+        <li><a class="nav-link" href="results.html" aria-current="page" style="color:var(--lilac)">Results</a></li>
+          <li><a class="nav-link" href="index.html#video-reviews">Videos</a></li>
+        <li><a class="nav-link" href="index.html#pricing">Pricing</a></li>
+        <li><a class="nav-link" href="index.html#faq">FAQ</a></li>
+        <li><a class="nav-link" href="index.html#support">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Mobile menu toggle -->
+  <script>
+    (function(){
+      const toggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('mobile-menu');
+      if(toggle && menu){
+        toggle.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+        // close menu after tapping a link
+        menu.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => menu.classList.add('hidden'));
+        });
+      }
+    })();
+  </script>
+
+
+<main>
+<!-- Intro -->
+<section class="relative pt-32 pb-10">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <nav aria-label="Breadcrumb" class="text-sm text-white/60 mb-6">
+      <a href="index.html" class="hover:text-white">Home</a> <span aria-hidden="true">/</span> <span class="text-white/85">Student Results</span>
+    </nav>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-[var(--blue)] to-[var(--lilac)]">
+      ChimeRaid Ecom Student Results and Reviews
+    </h1>
+    <p class="mt-6 text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">
+      Every number on this page comes from a screenshot a student posted in our Discord: Shopify sales dashboards, first orders, on-camera reviews and messages. No mockups, no stock photos.
+    </p>
+    <p class="mt-4 text-sm text-white/60 leading-relaxed">
+      Results vary. These are some of our strongest results, not a promise of what you will make.
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+      <a href="https://linktr.ee/CHIMERAIDECOM" class="btn-shimmer magnetic-btn w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 text-lg font-extrabold rounded-full text-[#0b0b10] bg-gradient-to-r from-[var(--lilac)] to-[var(--blue)] shadow-lg hover:scale-105 transition-all duration-300">Apply Now</a>
+      <a href="index.html#pricing" class="w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 text-lg font-bold rounded-full border border-[var(--blue)]/60 text-white hover:border-[var(--lilac)]/70 hover:scale-105 transition-all duration-300">See Plans and Pricing</a>
+    </div>
+  </div>
+</section>
+
+<!-- Video reviews -->
+<section id="video-reviews" class="relative pt-8 pb-10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Video Reviews From Students</h2>
+      <p class="mt-3 text-lg text-white/80">Straight talk from students, on camera, no script.</p>
+    </div>
+    <div class="mt-10 grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+        <div class="aspect-[9/16] bg-black">
+          <video src="IMG_1714.MP4#t=0.1" poster="assets/video-thumbs/thumb-review-1.jpg" controls playsinline preload="none" class="w-full h-full object-cover" aria-label="Student video review 1"></video>
+        </div>
+        <p class="p-3 font-bold text-sm sm:text-base">Student video review #1</p>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+        <div class="aspect-[9/16] bg-black">
+          <video src="IMG_6855.MP4#t=0.1" poster="assets/video-thumbs/thumb-review-2.jpg" controls playsinline preload="none" class="w-full h-full object-cover" aria-label="Student video review 2"></video>
+        </div>
+        <p class="p-3 font-bold text-sm sm:text-base">Student video review #2</p>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+        <div class="aspect-[9/16] bg-black">
+          <video src="IMG_4511.MP4#t=0.1" poster="assets/video-thumbs/thumb-review-3.jpg" controls playsinline preload="none" class="w-full h-full object-cover" aria-label="Student video review 3"></video>
+        </div>
+        <p class="p-3 font-bold text-sm sm:text-base">Student video review #3</p>
+      </div>
+      <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/5">
+        <div class="aspect-[9/16] bg-black">
+          <video src="IMG_4512.MP4#t=0.1" poster="assets/video-thumbs/thumb-review-4.jpg" controls playsinline preload="none" class="w-full h-full object-cover" aria-label="Student video review 4"></video>
+        </div>
+        <p class="p-3 font-bold text-sm sm:text-base">Student video review #4</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Dashboards -->
+<section id="wins" class="relative pt-10 pb-6">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Shopify Sales Dashboards and Wins</h2>
+      <p class="mt-3 text-lg text-white/80">Sales, orders, conversion rates and messages, posted by the students who built the stores.</p>
+    </div>
+    <div class="mt-10 columns-2 md:columns-3 lg:columns-4 gap-5 [column-fill:_balance]">
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-490-orders.jpg" width="1181" height="2560" alt="Student win: 490 orders, $24,499 in one week" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">$24,499</p>
+          <p class="text-sm text-white/70">490 orders in one week.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-39k-usd.jpg" width="1181" height="2560" alt="Student win: $39,560 total sales, 988 orders" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">$39,560</p>
+          <p class="text-sm text-white/70">988 orders in 30 days. “That first $1 online changes everything.”</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-31k-gbp.jpg" width="1181" height="2560" alt="Student win: £31,510 total sales, 853 orders" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">£31,510</p>
+          <p class="text-sm text-white/70">853 orders in 7 days.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-first-sale.jpg" width="1181" height="2560" alt="Student win: first sale, order #1001" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">Order #1001</p>
+          <p class="text-sm text-white/70">First sale. Every student starts here.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-18k-gbp.jpg" width="1181" height="2560" alt="Student win: £18,986 total sales, 131 orders" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">£18,986</p>
+          <p class="text-sm text-white/70">131 orders in 7 days.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-cvr-breakdown.jpg" width="1181" height="2560" alt="Student win: 3.6% conversion rate, 1,049 completed checkouts" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">3.6% CVR</p>
+          <p class="text-sm text-white/70">1,049 completed checkouts in 30 days.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-35k-usd.jpg" width="1181" height="2560" alt="Student win: $35,172 total sales, 415 orders" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">$35,172</p>
+          <p class="text-sm text-white/70">415 orders at a 3.6% conversion rate.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-821eur.jpg" width="1181" height="2560" alt="Student win: €821.98 total sales, 35 orders" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">€821.98</p>
+          <p class="text-sm text-white/70">35 orders, sessions up 291%.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-4404-profit.jpg" width="1181" height="2560" alt="Student win: $4,404 net profit, up 517 percent" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">$4,404 profit</p>
+          <p class="text-sm text-white/70">Net profit up 517%.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/testimonials/tm-12k-one-day.jpg" width="950" height="1280" alt="Student win: $12,951.15 total sales, 293 orders" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">$12,951</p>
+          <p class="text-sm text-white/70">One day of sales. “Easiest money I ever made.”</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/testimonials/tm-10k-milestone.jpg" width="629" height="1280" alt="Shopify 10K milestone award" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">10K milestone</p>
+          <p class="text-sm text-white/70">Shopify milestone award unlocked.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/wins/win-500day-goal.jpg" width="1181" height="2560" alt="Student win: pushing toward $500 a day" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">Sales landing</p>
+          <p class="text-sm text-white/70">“Go for $500/day.”</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/testimonials/tm-goat-shoutout.jpg" width="1309" height="1202" alt="Mentee message: Ecom expert, 10 of 10" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">10/10</p>
+          <p class="text-sm text-white/70">“Ecom expert, 10 of 10.” Feedback from a mentee.</p>
+        </div>
+      </div>
+      <div class="mb-5 break-inside-avoid rounded-2xl overflow-hidden border border-white/10 bg-black">
+        <img src="assets/testimonials/tm-great-reviews.jpg" width="591" height="1280" alt="Message: I heard great reviews about you" class="w-full h-auto block" loading="lazy" />
+        <div class="p-4">
+          <p class="text-2xl font-black text-[var(--blue)]">Word of mouth</p>
+          <p class="text-sm text-white/70">“I heard great reviews about you.”</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How -->
+<section id="how" class="relative pt-10 pb-10">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">How Students Get These Results</h2>
+      <p class="mt-3 text-lg text-white/80">Every store above went through the same four steps of the mentorship.</p>
+    </div>
+    <ol class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <p class="text-sm font-bold text-[var(--blue)]">Step 1: Plan</p>
+        <h3 class="mt-2 text-xl font-extrabold">Offer and signals</h3>
+        <p class="mt-2 text-white/75 leading-relaxed">Lock a clear offer and shortlist products with real demand, margin and velocity, then validate in a 72-hour loop before spending big.</p>
+      </li>
+      <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <p class="text-sm font-bold text-[var(--blue)]">Step 2: Build</p>
+        <h3 class="mt-2 text-xl font-extrabold">Store and funnel</h3>
+        <p class="mt-2 text-white/75 leading-relaxed">Fix page speed, clarity and checkout friction in order, aiming for a store that loads in under 3 seconds.</p>
+      </li>
+      <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <p class="text-sm font-bold text-[var(--blue)]">Step 3: Launch</p>
+        <h3 class="mt-2 text-xl font-extrabold">Creatives and ads</h3>
+        <p class="mt-2 text-white/75 leading-relaxed">Ship identity-driven hooks, cut fast and judge every ad against KPI gates instead of gut feel.</p>
+      </li>
+      <li class="rounded-2xl border border-white/10 bg-white/5 p-6">
+        <p class="text-sm font-bold text-[var(--blue)]">Step 4: Scale</p>
+        <h3 class="mt-2 text-xl font-extrabold">Rules and guardrails</h3>
+        <p class="mt-2 text-white/75 leading-relaxed">Raise spend on rules: daily caps, ROAS floors and supplier sync, so growth doesn't bleed cash.</p>
+      </li>
+    </ol>
+    <p class="mt-8 text-center"><a href="index.html#how-it-works" class="font-semibold text-[var(--blue)] hover:text-white underline underline-offset-4">See the full program breakdown</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="results-faq" class="relative pt-6 pb-10">
+  <div class="max-w-3xl mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-center">Questions About Student Results</h2>
+    <div class="mt-8 space-y-4">
+      <details class="group rounded-2xl border border-white/10 bg-white/5 p-5">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-lg">
+          Are these results real?
+          <i class="fa-solid fa-chevron-down text-sm text-white/60 transition group-open:rotate-180"></i>
+        </summary>
+        <p class="mt-3 text-white/75 leading-relaxed">Yes. Every dashboard and message on this page was posted by a student in the ChimeRaid Ecom Discord, in the wins and student-wins channels. We use their screenshots as they shared them, with no mockups or stock images.</p>
+      </details>
+      <details class="group rounded-2xl border border-white/10 bg-white/5 p-5">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-lg">
+          Are these typical results?
+          <i class="fa-solid fa-chevron-down text-sm text-white/60 transition group-open:rotate-180"></i>
+        </summary>
+        <p class="mt-3 text-white/75 leading-relaxed">No. These are some of our strongest weeks, not a promise of what you will make. Your niche, ad budget and how fast you execute all change the outcome. Every student starts at the first order, like the #1001 screenshot above.</p>
+      </details>
+      <details class="group rounded-2xl border border-white/10 bg-white/5 p-5">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-lg">
+          How much do I need to get started?
+          <i class="fa-solid fa-chevron-down text-sm text-white/60 transition group-open:rotate-180"></i>
+        </summary>
+        <p class="mt-3 text-white/75 leading-relaxed">Plans start at $499 for 3 months. On top of that, expect an initial ad test budget of around $300 to $600 for the first 72-hour validation round. We only scale spend once the numbers hold.</p>
+      </details>
+      <details class="group rounded-2xl border border-white/10 bg-white/5 p-5">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 font-bold text-lg">
+          How long until I see my first sale?
+          <i class="fa-solid fa-chevron-down text-sm text-white/60 transition group-open:rotate-180"></i>
+        </summary>
+        <p class="mt-3 text-white/75 leading-relaxed">There is no fixed timeline. We validate products in 72 hours, then scale only when the numbers hold. Students who iterate creatives fast and keep clean analytics tend to move quicker.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="relative pt-6 pb-20">
+  <div class="max-w-3xl mx-auto px-4 text-center rounded-3xl border border-white/10 bg-white/5 py-12">
+    <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight">Want your store on this page?</h2>
+    <p class="mt-3 text-lg text-white/80 px-2">Plans start at $499 for 3 months, with a private Discord and weekly office hours.</p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center px-4">
+      <a href="https://linktr.ee/CHIMERAIDECOM" class="btn-shimmer magnetic-btn w-full sm:w-auto inline-flex items-center justify-center px-7 py-4 text-lg font-extrabold rounded-full text-[#0b0b10] bg-gradient-to-r from-[var(--lilac)] to-[var(--blue)] shadow-lg hover:scale-105 transition-all duration-300">Apply Now</a>
+      <a href="https://wa.me/19717570193?text=Hi%20ChimeRaid%2C%20I%27d%20like%20to%20apply%20for%20the%20mentorship" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 text-lg font-bold rounded-full border border-white/20 hover:bg-white/10 transition"><i class="fa-brands fa-whatsapp text-green-400"></i> DM on WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="site-footer" class="relative text-white">
+  <!-- backdrop glow -->
+  <div class="absolute inset-0 -z-10"
+       style="background: radial-gradient(60% 60% at 50% 0%, rgba(200,162,200,.20) 0%, rgba(127,219,255,.18) 35%, rgba(8,0,20,0) 70%);"></div>
+
+  <div class="border-t border-white/10 bg-[#0b0b10]/90 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div class="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-12 lg:gap-x-10">
+        <!-- Brand / mini value -->
+        <div class="col-span-2 lg:col-span-4">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl font-extrabold tracking-tight whitespace-nowrap">
+              <span style="color:var(--blue)">Chime</span><span style="color:var(--lilac)">Raid</span> <span style="color:var(--blue)">Ecom</span>
+            </span>
+          </div>
+          <p class="mt-4 text-white/75 max-w-sm">
+            Operators, not influencers. Signal-based products, funnel control, rules-based scaling.
+          </p>
+          <!-- Mini trust badges -->
+          <div class="mt-5 flex flex-wrap items-center gap-2 text-xs text-white/60">
+            <span class="px-2 py-1 rounded-full border border-white/15 bg-white/5">under-3s load target</span>
+            <span class="px-2 py-1 rounded-full border border-white/15 bg-white/5">48h payback target</span>
+            <span class="px-2 py-1 rounded-full border border-white/15 bg-white/5">refund target &lt; 1.5%</span>
+          </div>
+          <!-- Socials -->
+          <div class="mt-6 flex items-center gap-3">
+            <a href="https://discord.gg/R5mxWn3VsC" target="_blank" class="w-10 h-10 grid place-items-center rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="Discord">
+              <i class="fa-brands fa-discord" style="color:#5865F2;"></i>
+            </a>
+            <a href="https://x.com/mrjoshyleo?s=21" target="_blank" class="w-10 h-10 grid place-items-center rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="Twitter/X"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.tiktok.com/@chimeraidem" target="_blank" class="w-10 h-10 grid place-items-center rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/19717570193?text=Hi%20ChimeRaid%2C%20I%27d%20like%20to%20apply%20for%20the%20mentorship" target="_blank" class="w-10 h-10 grid place-items-center rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp text-green-400"></i>
+            </a>
+            <a href="mailto:admin@chimeraid.com?subject=ChimeRaid%20Ecom%20enquiry" class="w-10 h-10 grid place-items-center rounded-lg border border-white/10 bg-white/5 hover:bg-white/10 transition" aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Explore -->
+        <nav class="col-span-1 lg:col-span-2" aria-labelledby="f-programs">
+          <h4 id="f-programs" class="text-sm font-bold tracking-wider text-white/80">Explore</h4>
+          <ul class="mt-4 space-y-3 text-white/80">
+            <li><a href="index.html#inside" class="hover:text-white">What’s Inside</a></li>
+            <li><a href="index.html#how-it-works" class="hover:text-white">How It Works</a></li>
+            <li><a href="index.html#video-reviews" class="hover:text-white">Video Reviews</a></li>
+            <li><a href="index.html#pricing" class="hover:text-white">Pricing / Tiers</a></li>
+            <li><a href="results.html" class="hover:text-white">Student Results</a></li>
+            <li><a href="index.html#faq" class="hover:text-white">FAQ</a></li>
+            <li><a href="index.html#final-cta" class="hover:text-white">Apply Now</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <nav class="col-span-1 lg:col-span-3" aria-labelledby="f-support">
+          <h4 id="f-support" class="text-sm font-bold tracking-wider text-white/80">Contact Support</h4>
+          <ul class="mt-4 space-y-3 text-white/80">
+            <li><a href="index.html#support" class="hover:text-white">Get help by email</a></li>
+            <li><a href="mailto:admin@chimeraid.com?subject=ChimeRaid%20Ecom%20enquiry" class="hover:text-white text-sm lg:text-base break-all min-[360px]:break-normal min-[360px]:whitespace-nowrap">admin@chimeraid.com</a></li>
+            <li><a href="https://wa.me/19717570193?text=Hi%20ChimeRaid%2C%20I%27d%20like%20to%20apply%20for%20the%20mentorship" target="_blank" class="hover:text-white">WhatsApp DM</a></li>
+            <li><a href="https://discord.gg/R5mxWn3VsC" target="_blank" class="hover:text-white">Join our Discord</a></li>
+            <li><a href="https://linktr.ee/CHIMERAIDECOM" target="_blank" class="hover:text-white">Apply via Linktree</a></li>
+          </ul>
+        </nav>
+
+        <!-- Community -->
+        <div class="col-span-2 lg:col-span-3">
+          <h4 class="text-sm font-bold tracking-wider text-white/80">Updates and Wins</h4>
+          <p class="mt-4 text-white/75 max-w-sm">Playbooks, creative prompts and student wins get posted in our Discord.</p>
+          <a href="https://discord.gg/R5mxWn3VsC" target="_blank"
+             class="mt-4 inline-flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-[#0b0b10] bg-gradient-to-r from-[#C8A2C8] to-[#7FDBFF] hover:scale-105 transition">
+            <i class="fa-brands fa-discord"></i> Join the Discord
+          </a>
+          <div class="mt-6 text-sm text-white/70">
+            <div class="flex items-center gap-2"><i class="fa-solid fa-location-dot opacity-70"></i> Remote • Worldwide</div>
+            <div class="flex items-center gap-2 mt-2"><i class="fa-solid fa-clock opacity-70"></i> Response time under 24h</div>
+          </div>
+        </div>
+      </div>
+      <!-- Divider -->
+      <div class="mt-12 h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent"></div>
+
+      <!-- Lower bar -->
+      <div class="mt-6 flex flex-col lg:flex-row items-center lg:justify-between gap-4">
+        <!-- Legal -->
+        <div class="flex flex-wrap items-center gap-4 text-sm text-white/60">
+          <span>&copy; <span id="year"></span> ChimeRaid Ecom</span>
+          <a href="privacy.html" class="hover:text-white">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white">Terms of Use</a>
+          <button id="cookie-btn" class="text-white/60 hover:text-white">Cookie Preferences</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to top -->
+  <button id="toTop"
+          class="fixed bottom-6 right-6 z-40 opacity-0 pointer-events-none transition
+                 px-4 py-3 rounded-full shadow-xl border border-white/10 bg-[#0b0b10]/80
+                 hover:bg-[#0b0b10]">
+    <span class="inline-grid place-items-center w-6 h-6 rounded-md text-[#0b0b10] bg-gradient-to-br from-[#C8A2C8] to-[#7FDBFF]">
+      <i class="fa-solid fa-chevron-up text-xs"></i>
+    </span>
+  </button>
+
+  <!-- Cookie sheet (lightweight) -->
+  <div id="cookie-sheet" class="fixed inset-x-4 bottom-4 md:inset-x-auto md:right-6 md:max-w-lg
+                               bg-[#0b0b10] border border-white/10 rounded-2xl p-4 shadow-2xl hidden z-50">
+    <div class="flex items-start gap-3">
+      <span class="inline-grid place-items-center w-8 h-8 rounded-lg text-[#0b0b10] bg-gradient-to-br from-[#C8A2C8] to-[#7FDBFF]">
+        <i class="fa-solid fa-cookie-bite"></i>
+      </span>
+      <div class="text-sm">
+        <p class="text-white/90">This site only stores your cookie choice on your device. We don’t run ad or analytics trackers. Details in our <a href="privacy.html" class="underline">Privacy Policy</a>.</p>
+        <div class="mt-3 flex flex-wrap gap-2">
+          <button id="cookie-accept"
+                  class="px-4 py-2 rounded-full text-[#0b0b10] font-semibold bg-gradient-to-r from-[#C8A2C8] to-[#7FDBFF]">
+            Accept
+          </button>
+          <button id="cookie-decline"
+                  class="px-4 py-2 rounded-full font-semibold border border-white/15 bg-white/5">
+            Decline
+          </button>
+        </div>
+      </div>
+      <button id="cookie-close" class="ml-auto text-white/60 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+  </div>
+
+  <!-- Footer scripts -->
+  <script>
+    (function(){
+      // year
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // back to top
+      const toTop = document.getElementById('toTop');
+      function onScroll(){
+        if(window.scrollY > 600){
+          toTop.classList.remove('opacity-0','pointer-events-none');
+        } else {
+          toTop.classList.add('opacity-0','pointer-events-none');
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+      // cookie prefs
+      const SHEET = document.getElementById('cookie-sheet');
+      const BTN   = document.getElementById('cookie-btn');
+      const KEY   = 'da_cookie_pref';
+      const pref  = localStorage.getItem(KEY);
+      if(!pref){ setTimeout(()=>SHEET.classList.remove('hidden'), 1200); }
+      BTN.addEventListener('click', ()=> SHEET.classList.remove('hidden'));
+      document.getElementById('cookie-accept').addEventListener('click', () => { localStorage.setItem(KEY,'accept'); SHEET.classList.add('hidden'); });
+      document.getElementById('cookie-decline').addEventListener('click', () => { localStorage.setItem(KEY,'decline'); SHEET.classList.add('hidden'); });
+      document.getElementById('cookie-close').addEventListener('click', () => SHEET.classList.add('hidden'));
+    })();
+  </script>
+</footer>
+
+<!-- magnetic buttons: follow the cursor within their own bounds, spring back on leave -->
+<script>
+  (function(){
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (!matchMedia('(hover: hover) and (pointer: fine)').matches) return; // skip on touch devices
+    const strength = 0.35, max = 14;
+    document.querySelectorAll('.magnetic-btn').forEach(btn => {
+      let pending = null;
+      btn.addEventListener('mousemove', e => {
+        if (pending) return; // collapse rapid mousemoves to one update per frame
+        pending = requestAnimationFrame(() => {
+          const r = btn.getBoundingClientRect();
+          let dx = (e.clientX - (r.left + r.width / 2)) * strength;
+          let dy = (e.clientY - (r.top + r.height / 2)) * strength;
+          dx = Math.max(-max, Math.min(max, dx));
+          dy = Math.max(-max, Math.min(max, dy));
+          btn.classList.remove('snap-back');
+          btn.style.transform = `translate(${dx}px, ${dy}px)`;
+          pending = null;
+        });
+      });
+      btn.addEventListener('mouseleave', () => {
+        if (pending) { cancelAnimationFrame(pending); pending = null; }
+        btn.classList.add('snap-back');
+        btn.style.transform = 'translate(0, 0)';
+      });
+    });
+  })();
+</script>
+
+
+<script>
+  // play one video at a time
+  (function(){
+    const vids=document.querySelectorAll('#video-reviews video');
+    vids.forEach(v=>v.addEventListener('play',()=>vids.forEach(o=>{if(o!==v)o.pause();})));
+  })();
+</script>
+</body>
+</html>
