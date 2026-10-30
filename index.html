@@ -67,6 +67,8 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png?v=2" />
 
+  <link rel="preconnect" href="https://images.unsplash.com">
+
   <!-- Tailwind + Icons -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet"
@@ -244,8 +246,13 @@
     <!-- Background -->
     <div class="absolute inset-0">
       <img
-        src="https://images.unsplash.com/photo-1557804506-669a67965ba0"
-        alt="Hero background"
+        src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1600&q=55"
+        srcset="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=800&q=55 800w,
+                https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1600&q=55 1600w"
+        sizes="100vw"
+        alt=""
+        fetchpriority="high"
+        decoding="async"
         class="w-full h-full object-cover animate-slow-zoom brightness-60 blur-sm" />
       <div class="absolute inset-0 bg-black/60"></div>
     </div>
@@ -266,8 +273,11 @@
           <span class="block text-flow bg-clip-text text-transparent bg-gradient-to-r from-white via-[var(--blue)] to-[var(--lilac)]">
             Build, Scale and Automate
           </span>
-          <span class="block text-flow bg-clip-text text-transparent bg-gradient-to-r from-[var(--lilac)] via-[var(--blue)] to-white mt-2">
-            With CHIMERAID ECOM
+          <span class="block text-flow bg-clip-text text-transparent bg-gradient-to-r from-[var(--lilac)] via-[var(--blue)] to-white mt-2 text-3xl sm:text-5xl md:text-6xl">
+            Your Shopify Dropshipping Store
+          </span>
+          <span class="block mt-4 text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight">
+            <span class="text-white/80">with</span> <span style="color:var(--blue)">Chime</span><span style="color:var(--lilac)">Raid</span> <span style="color:var(--blue)">Ecom</span>
           </span>
         </h1>
 
@@ -1823,6 +1833,7 @@
             <li><a href="#wins" class="hover:text-white">Student Wins</a></li>
             <li><a href="results.html" class="hover:text-white">Student Results</a></li>
             <li><a href="winning-dropshipping-products.html" class="hover:text-white">Product Research Guide</a></li>
+            <li><a href="shopify-dropshipping-store-checklist.html" class="hover:text-white">Store Setup Checklist</a></li>
             <li><a href="#faq" class="hover:text-white">FAQ</a></li>
             <li><a href="#final-cta" class="hover:text-white">Apply Now</a></li>
           </ul>
