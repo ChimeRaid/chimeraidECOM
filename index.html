@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2DG6WWG5M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // respect a visitor's cookie choice: no analytics if they declined
+    try { if (localStorage.getItem('da_cookie_pref') === 'decline') { window['ga-disable-G-G2DG6WWG5M'] = true; } } catch (e) {}
+    gtag('js', new Date());
+    gtag('config', 'G-G2DG6WWG5M', { anonymize_ip: true });
+  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Shopify Dropshipping Mentorship | ChimeRaid Ecom</title>
   <link rel="canonical" href="https://chimeraid.com/">
   <meta name="robots" content="index, follow, max-image-preview:large">
@@ -1900,7 +1910,7 @@
         <i class="fa-solid fa-cookie-bite"></i>
       </span>
       <div class="text-sm">
-        <p class="text-white/90">This site only stores your cookie choice on your device. We don’t run ad or analytics trackers. Details in our <a href="privacy.html" class="underline">Privacy Policy</a>.</p>
+        <p class="text-white/90">We use Google Analytics to count visits and see which pages help. We don’t run ad trackers. Choose Decline and analytics stays off. Details in our <a href="privacy.html" class="underline">Privacy Policy</a>.</p>
         <div class="mt-3 flex flex-wrap gap-2">
           <button id="cookie-accept"
                   class="px-4 py-2 rounded-full text-[#0b0b10] font-semibold bg-gradient-to-r from-[#C8A2C8] to-[#7FDBFF]">
@@ -1942,7 +1952,7 @@
       if(!pref){ setTimeout(()=>SHEET.classList.remove('hidden'), 1200); }
       BTN.addEventListener('click', ()=> SHEET.classList.remove('hidden'));
       document.getElementById('cookie-accept').addEventListener('click', () => { localStorage.setItem(KEY,'accept'); SHEET.classList.add('hidden'); });
-      document.getElementById('cookie-decline').addEventListener('click', () => { localStorage.setItem(KEY,'decline'); SHEET.classList.add('hidden'); });
+      document.getElementById('cookie-decline').addEventListener('click', () => { localStorage.setItem(KEY,'decline'); window['ga-disable-G-G2DG6WWG5M'] = true; SHEET.classList.add('hidden'); });
       document.getElementById('cookie-close').addEventListener('click', () => SHEET.classList.add('hidden'));
     })();
   </script>

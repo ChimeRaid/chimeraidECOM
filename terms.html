@@ -2,7 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2DG6WWG5M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    // respect a visitor's cookie choice: no analytics if they declined
+    try { if (localStorage.getItem('da_cookie_pref') === 'decline') { window['ga-disable-G-G2DG6WWG5M'] = true; } } catch (e) {}
+    gtag('js', new Date());
+    gtag('config', 'G-G2DG6WWG5M', { anonymize_ip: true });
+  </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Terms of Use | ChimeRaid Ecom</title>
   <link rel="canonical" href="https://chimeraid.com/terms.html">
   <meta name="description" content="Terms for using chimeraid.com and the ChimeRaid Ecom mentorship." />
